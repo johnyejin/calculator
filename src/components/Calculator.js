@@ -100,8 +100,8 @@ export default class Calculator {
     if(this.rightNumber) {
       this.leftNumber = this.calculate(this.leftNumber, this.rightNumber);
       this.rightNumber = '';
+      this.operator = '';
     }
-
     this.output.render(this.leftNumber);
   };
   handleDot = () => {
